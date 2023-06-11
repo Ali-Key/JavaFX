@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="743.0" style="-fx-background-color: gry;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assigmentlap.HomeWork">
+   <children>
+      <TextField fx:id="txtfield" layoutX="46.0" layoutY="36.0" prefHeight="38.0" prefWidth="247.0" promptText="Enter your name" />
+      <ListView fx:id="listview" layoutX="46.0" layoutY="162.0" prefHeight="324.0" prefWidth="261.0" />
+      <Label layoutX="46.0" layoutY="115.0" text="List View 1">
+         <font>
+            <Font name="Trebuchet MS" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnadd" defaultButton="true" layoutX="308.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnadd" prefHeight="38.0" prefWidth="95.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="450.0" layoutY="115.0" text="List View 2">
+         <font>
+            <Font name="Trebuchet MS" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRetrunItems" layoutX="594.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnRetrunItems" prefHeight="38.0" prefWidth="102.0" text="RETRUN ITEMS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRetrunItem" layoutX="403.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnRetrunItem" prefHeight="38.0" prefWidth="102.0" text="RETRUN ITEM">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMoveItems" layoutX="225.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnMoveItems" prefHeight="38.0" prefWidth="95.0" text="MOVE ITEMS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMoveItem" layoutX="46.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnMoveItem" prefHeight="38.0" prefWidth="102.0" text="MOVE ITEM">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblListViewCount" layoutX="46.0" layoutY="520.0" onDragDetected="#btnadd" prefHeight="38.0" prefWidth="269.0" textAlignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblListViewCount1" layoutX="449.0" layoutY="520.0" onDragDetected="#btnadd" prefHeight="38.0" prefWidth="247.0" textAlignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listview1" layoutX="403.0" layoutY="167.0" prefHeight="324.0" prefWidth="261.0" />
+   </children>
+</AnchorPane>
